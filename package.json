@@ -1,0 +1,28 @@
+{
+  "name": "TvGuide",
+  "version": "1.0.0",
+  "description": "Retrieves TV channel and schedule data from an external GraphQL API",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "tv",
+    "channels",
+    "schedules",
+    "replatore",
+    "graphql",
+    "api"
+  ],
+  "author": "Frits Vogel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "mocha": "^9.0.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.13.0"
+  }
+}
