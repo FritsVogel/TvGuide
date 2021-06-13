@@ -16,7 +16,7 @@ Basic things I covered in Node.js:
 * Output to terminal is just using console.log, could be extended to output to logfile through configuration (I'm sure there will be packages to do that in a nice and clean way).
 * I used jshint as a lint tool (not too sure whether that "esversion=11" is the best choice) for a quick check, didn't use prettify tools.
 * Application wise, I chose to retrieve the channels first (which you have to do, given the available API services). After that all TV schedules for the selected dates for the channel in question are outputted in one blob, ordered by start date. Obvious this can be improved by doing an output per day.
-* Error handling and exception catches are basic and not too consistent at this moment, could be improved.
+* Error handling and exception catches are basic and not too consistent at this moment, could be improved. E.g. API retries can be added to withstand the occasional "Too many requests" API responses I saw while testing.
 * ...and I stole the authentication key from my browser inspector while doing an API call in the API sandbox, seemed to do the trick :-)
 * The channels and dates are code constants now, these could have been moved to .env as well if needed. Features could have been built in to find a window of 2 day data, instead of just picking 2 days. And the list goes on. Overall, I did cover all functional requirements from the assignment :-)
 
